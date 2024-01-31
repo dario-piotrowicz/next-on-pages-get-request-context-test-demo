@@ -14,10 +14,10 @@ export async function GET(request: NextRequest) {
   // )
   //
   // KV Example:
-  // const myKv = process.env.MY_KV
-  // await myKv.put('suffix', ' from a KV store!')
-  // const suffix = await myKv.get('suffix')
-  // responseText += suffix
+  const myKv = cloudflare.env.MY_KV
+  await myKv.put('suffix', ' from a KV store!')
+  const suffix = await myKv.get('suffix')
+  responseText += suffix
 
   return new Response(responseText)
 }
