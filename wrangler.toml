@@ -1,0 +1,6 @@
+[vars]
+MY_VAR = "my-value"
+
+[[kv_namespaces]]
+binding = "MY_KV"
+id = "???"

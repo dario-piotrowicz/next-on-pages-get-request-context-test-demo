@@ -1,11 +1,5 @@
-declare global {
-  var cloudflare: { env: Env, ctx: ExecutionContext, cf: IncomingRequestCfProperties };
-
-  interface Env {
-    // KV Example:
-    MY_KV: KVNamespace
-  }
+interface Env {
+  MY_VAR: string;
+  MY_KV: KVNamespace
 }
-
-export {}
 
