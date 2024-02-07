@@ -7,7 +7,7 @@
 export const runtime = 'edge';
 
 export default function Client() {
-    // const myVar = getRequestContext<Env>().env.MY_VAR;
+    // const myVar = getRequestContext().env.MY_VAR;
 
     return (
         <>

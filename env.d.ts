@@ -1,5 +1,5 @@
-interface Env {
+interface CloudflareEnv {
   MY_VAR: string;
-  MY_KV: KVNamespace
+  MY_KV: KVNamespace;
 }
 
